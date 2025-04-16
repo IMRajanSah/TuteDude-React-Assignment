@@ -18,5 +18,5 @@ Add a "Clear All" button to remove all to-dos.
 Implement a search bar to filter the displayed to-dos.  
   
 Submission Guidelines:- Deploy your react app using netlify and share both deployed link and your github repo link  
-
+netlify URL: https://rajansah-todo-app.netlify.app/
 ![alt text](image.png)
