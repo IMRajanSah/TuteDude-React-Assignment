@@ -31,7 +31,7 @@
 
   <h2>Submission Guidelines</h2>
   <ul>
-    <li>Deploy your React app using <strong>Netlify</strong>.</li>
+    <li>Deploy your React app using <strong>Netlify</strong>:https://rajansah-route.netlify.app/</li>
     <li>Share the following:
       <ul>
         <li>Link to the deployed application.</li>
