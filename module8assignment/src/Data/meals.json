@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta with rich meat sauce.",
+    "price": 12.99
+  },
+  {
+    "id": 2,
+    "name": "Chicken Tikka Masala",
+    "description": "Tender chicken in a creamy tomato curry sauce.",
+    "price": 13.49
+  },
+  {
+    "id": 3,
+    "name": "Beef Stroganoff",
+    "description": "Sautéed beef in a creamy mushroom sauce over noodles.",
+    "price": 14.25
+  },
+  {
+    "id": 4,
+    "name": "Margherita Pizza",
+    "description": "Fresh tomatoes, mozzarella, and basil on a thin crust.",
+    "price": 10.99
+  },
+  {
+    "id": 5,
+    "name": "Grilled Salmon",
+    "description": "Seasoned salmon fillet with lemon butter sauce.",
+    "price": 16.75
+  },
+  {
+    "id": 6,
+    "name": "Vegetable Stir Fry",
+    "description": "Mixed vegetables sautéed with garlic soy sauce.",
+    "price": 9.5
+  },
+  {
+    "id": 7,
+    "name": "BBQ Pulled Pork Sandwich",
+    "description": "Slow-cooked pork with tangy BBQ sauce on a toasted bun.",
+    "price": 11.49
+  },
+  {
+    "id": 8,
+    "name": "Pad Thai",
+    "description": "Rice noodles with shrimp, peanuts, and tangy tamarind sauce.",
+    "price": 12.0
+  },
+  {
+    "id": 9,
+    "name": "Chicken Caesar Salad",
+    "description": "Grilled chicken on romaine lettuce with Caesar dressing.",
+    "price": 10.5
+  },
+  {
+    "id": 10,
+    "name": "Mushroom Risotto",
+    "description": "Creamy risotto with wild mushrooms and parmesan.",
+    "price": 11.75
+  },
+  {
+    "id": 11,
+    "name": "Beef Burrito",
+    "description": "Flour tortilla filled with beef, beans, rice, and cheese.",
+    "price": 10.99
+  },
+  {
+    "id": 12,
+    "name": "Falafel Wrap",
+    "description": "Crispy falafel with tahini sauce in a warm wrap.",
+    "price": 9.25
+  },
+  {
+    "id": 13,
+    "name": "Shrimp Tacos",
+    "description": "Spicy grilled shrimp with avocado salsa in soft tortillas.",
+    "price": 12.5
+  },
+  {
+    "id": 14,
+    "name": "Mac & Cheese",
+    "description": "Creamy cheddar macaroni with breadcrumb topping.",
+    "price": 8.99
+  },
+  {
+    "id": 15,
+    "name": "Lamb Gyro",
+    "description": "Sliced lamb with tzatziki in a warm pita.",
+    "price": 11.99
+  }
+]
