@@ -1,0 +1,40 @@
+*{
+  /* background-color: rgb(245, 224, 224); */
+}
+.profile-mobile{
+  display: flex;
+}
+.myinfos-mobile{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 50vh;
+}
+.myinfos-card-mobile{
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  gap: 1rem;
+}
+.cards-mobile{
+  min-height: 2rem;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .profile-mobile,.myinfos-mobile{
+    flex-direction: column;
+  }
+  .myinfos-card-mobile{
+    display: flex;
+    margin-top: 5rem;
+    overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 20rem;
+  }
+  .myinfos-mobile{
+    margin-top: 8rem;
+  }
+  
+}
