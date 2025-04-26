@@ -1,6 +1,9 @@
 *{
   /* background-color: rgb(245, 224, 224); */
 }
+.dashboard-mobile{
+  margin-top: 5rem;
+}
 .profile-mobile{
   display: flex;
 }
@@ -8,7 +11,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  height: 50vh;
+  height: 60vh;
 }
 .myinfos-card-mobile{
   display: flex;
@@ -21,6 +24,11 @@
   width: 13rem;
   margin-bottom: 1rem;
 }
+.content-report-mobile{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 @media (max-width: 600px) {
   .profile-mobile,.myinfos-mobile{
     flex-direction: column;
@@ -31,10 +39,20 @@
     overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  padding-left: 20rem;
+  padding-left: 18rem;
   }
   .myinfos-mobile{
     margin-top: 8rem;
   }
-  
+  .table-mobile{
+    font-size: 0.75rem;
+  }
+  .content-report-mobile{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .dashboard-mobile{
+    margin-top: 10rem;
+  }
 }

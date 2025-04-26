@@ -143,7 +143,7 @@ const TransactionHistory = () => {
             </div>
         
 
-        <Table striped bordered hover responsive>
+        <Table striped bordered hover responsive className='table-mobile'>
           <thead>
             <tr>
               <th>Date</th>
@@ -163,6 +163,7 @@ const TransactionHistory = () => {
                 <td>{item.tranaction_type}</td>
                 <td>{item.descriptiom}</td>
                 <td>
+                  <span style={{display:'flex'}}>
                   <svg
                     onClick={()=>handleEdit(item)}
                     style={{ cursor: 'pointer',marginRight:'1rem' }}
@@ -193,6 +194,7 @@ const TransactionHistory = () => {
                   >
                     <path d='M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0' />
                   </svg>
+                  </span>
                 </td>
               </tr>
             )):<tr><td>No Search Result Found !!</td></tr>}

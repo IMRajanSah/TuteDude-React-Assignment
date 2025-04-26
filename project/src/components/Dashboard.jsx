@@ -1,40 +1,14 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Cards from './Cards'
 import { FinanceContext } from '../store/FinanceContext'
 import Chart from 'react-apexcharts';
+import MonthlyExpenseChartOverTime from './MonthlyExpenseChartOverTime';
+import MonthlyExpensesBreak from './MonthlyExpensesBreak';
 
 const Dashboard = () => {
   const {profile,transactions,budget}=useContext(FinanceContext)
-  // console.log(profile);
-  const [series, setSeries] = useState([44, 55, 13, 43]); // Initial data
-      const [labels, setLabels] = useState(['Rent', 'Groceries', 'Transport', 'Other']); // Initial data
-      
-    const [options, setOptions] = useState({
-      chart: {
-        type: 'donut',
-      },
-      title: {
-          text: 'Monthly Expense Breakdown',  // 🔹 Title here
-          align: 'left',
-          style: {
-            fontSize: '15px',
-            fontWeight: 'bold',
-            color: '#333',
-          }
-        },
-      labels: labels,
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          chart: { width: 300 },
-          legend: { position: 'bottom' }
-        }
-      }],
-      legend: {
-        position: 'right'
-      }
-    });
+  
   const calculateIncomeAmount = ()=>{
     var incomeAmount=0
     transactions.forEach(item => {
@@ -79,18 +53,24 @@ const Dashboard = () => {
     });
     return savingsAmount
   }
+  
+  const now = new Date();
+const currentYear = now.getFullYear();
   return (
-    <Container style={{marginTop:"4rem"}}>
+    <Container className='dashboard-mobile'>
         <div className='title'>
             {/* <h4>Dashbaord</h4> */}
         </div>
         <div className="content" >
         <div className="myinfos-mobile" >
-            <div style={{border:'1px solid black',padding:'1rem 0',borderRadius:'5px'}}>
-                    <Chart options={options} series={series} type="donut" width='375' />
+            <div style={{border:'1px solid black',padding:'0rem 1rem',borderRadius:'5px'}}>
+              <span>Monthly Expense Breakdown {`${now.toLocaleString('default', { month: 'long' })} ${currentYear}`} Over Time</span>
+                    <MonthlyExpenseChartOverTime/> 
                     </div>
-          <div style={{border:'1px solid black',padding:'1rem 0',borderRadius:'5px'}}>
-                    <Chart options={options} series={series} type="donut" width='375' />
+          <div style={{border:'1px solid black',padding:'0 1rem',borderRadius:'5px'}}>
+          <span>Monthly Expense Breakdown {`${now.toLocaleString('default', { month: 'long' })} ${currentYear}`}</span>
+          
+                    <MonthlyExpensesBreak/>
                     </div>
         </div>
         <div className="myinfos-card-mobile" >

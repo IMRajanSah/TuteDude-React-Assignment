@@ -97,12 +97,14 @@ const Budget = () => {
             <div style={{marginTop:'2rem'}}>
             {budgetIndicator.length>0?
             <>
-            {totalE/totalB>0.75?
+            {totalE/totalB>0.75?<>
         <ProgressBar variant="danger" now={((totalE/totalB)*100).toFixed(2)} label={((totalE/totalB)*100).toFixed(2)+'%'} />
-        :
+        <Alert variant='warning' style={{marginTop:'2rem'}}>Out of Budget for this category {'(>75%)'} !!</Alert>
+        </>
+        :<>
         <ProgressBar variant="success" now={((totalE/totalB)*100).toFixed(2)} label={((totalE/totalB)*100).toFixed(2)+'%'} />
+        <Alert variant='success' style={{marginTop:'2rem'}}>Out of Budget for this category {'(<75%)'} !!</Alert></>
         }
-        <Alert variant='warning' style={{marginTop:'2rem'}}>Out of Budget for this category !!</Alert>
         </>
         :
         <Alert variant='info'>Choose the budget indicator to show progress bar !!</Alert>}
